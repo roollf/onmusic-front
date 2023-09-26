@@ -1,0 +1,9 @@
+.navbar-footer {
+    background-color: inherit;
+    font-family: var(--font-mono);
+    font-size: smaller;
+}
+
+.navbar-footer span {
+    color: inherit;
+}

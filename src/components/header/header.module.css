@@ -1,0 +1,26 @@
+.navbar-header {
+  background-color: inherit;
+  font-family: var(--font-mono);
+}
+
+.navbar-header-brand {
+  font-weight: 700;
+}
+
+.navbar-header-brand:hover {
+  color: var(--main-color);
+}
+
+.navbar-header-link a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-header span {
+  color: inherit;
+}
+
+.navbar-header a {
+  color: inherit;
+  text-decoration: none;
+  transition: color .15s ease-in-out;
+}
