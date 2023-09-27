@@ -9,6 +9,7 @@ Este é um projeto em desenvolvimento de uma aplicação de música, semelhante 
 Nesta fase inicial de desenvolvimento, o projeto inclui as seguintes páginas:
 
 `Home` A página inicial da aplicação, que provavelmente exibirá uma lista de músicas em destaque, capas de álbuns e informações sobre o artista.
+
 `FAQ` Uma página de perguntas frequentes, que pode conter informações sobre como usar a aplicação, como funciona o streaming de música e outras dúvidas comuns dos usuários.
 
 ## Tecnologias 🛠
