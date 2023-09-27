@@ -17,6 +17,7 @@
 
 .navbar-header span {
   color: inherit;
+  font-size: small;
 }
 
 .navbar-header a {

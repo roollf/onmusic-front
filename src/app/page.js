@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { Carousel } from '@/components';
 
-export default function Home() {
+export default function Home() {  
   return (
     <main className={styles.main}>
       <div className={styles.description}>
@@ -27,6 +28,8 @@ export default function Home() {
           </a>
         </div>
       </div>
+
+      <Carousel carouselId={"carouselHome"} />
 
       <div className={styles.grid}>
         <a

@@ -3,8 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import './page.module.css';
 import AppWrapper from '@/components/hooks/appWrapper';
-import Header from '@/components/header/header';
-import Footer from '@/components/footer/footer';
+import { Header, Footer } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
+        <Header brand={"OnMusic"} menuItems={"FAQ, Cadastrar"} tagLine={"Music is our culture."} />
           <AppWrapper>
             {children}
           </AppWrapper>

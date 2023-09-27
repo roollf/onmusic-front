@@ -1,7 +1,7 @@
 .navbar-footer {
     background-color: inherit;
     font-family: var(--font-mono);
-    font-size: smaller;
+    font-size: x-small;
 }
 
 .navbar-footer span {
