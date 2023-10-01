@@ -1,0 +1,43 @@
+.card-content {
+    /* padding: 0.2rem 0.3rem; */
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-color-rgb), 0);
+    border: 1px solid rgba(var(--card-border-color-rgb), 0);
+    transition: background 200ms, border 200ms;
+    font-family: var(--font-mono);
+    color: inherit;
+}
+
+
+.card-content h5 {
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+.card-content p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    max-width: 30ch;
+    margin-bottom: 0.7rem;
+}
+
+.card-content a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.card-content:hover {
+    background: rgba(var(--card-color-rgb), 0.1);
+    border: 1px solid rgba(var(--card-border-color-rgb), 0.15);
+}
+
+.card-content-button {
+    border: 1px solid rgba(var(--card-border-color-rgb), 0);
+    transition: background 200ms, border 200ms;
+}
+
+.card-content-button:hover {
+    border: 1px solid rgba(var(--card-border-color-rgb), 0.3);
+}

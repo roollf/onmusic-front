@@ -1,9 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import './page.module.css';
-import AppWrapper from '@/components/hooks/appWrapper';
-import { Header, Footer } from '@/components'
+import { AppWrapper, Header, Footer } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +18,7 @@ export default function RootLayout({ children }) {
           <AppWrapper>
             {children}
           </AppWrapper>
-        <Footer />
+        <Footer tagLine={"OnMusic © 2023"} />
       </body>
     </html>
   )

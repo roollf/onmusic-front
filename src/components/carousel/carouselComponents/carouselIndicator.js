@@ -1,4 +1,4 @@
-export default function CarouselIndicator({ items ,parentSelector }) {
+export default function CarouselIndicator({ items, parentSelector }) {
     const targetSelector = `#${parentSelector}`;
 
     return (
@@ -6,7 +6,7 @@ export default function CarouselIndicator({ items ,parentSelector }) {
             {items.map((_, index) => (
                 <button
                     key={index}
-                    type="button"
+                    type={`button`}
                     data-bs-target={targetSelector}
                     data-bs-slide-to={index}
                     className={`${index === 0 ? "active" : ""}`}

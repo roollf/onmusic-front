@@ -6,15 +6,13 @@ export default function Header({ brand, menuItems, tagLine }) {
     
     return (
         <nav className={`navbar navbar-expand-lg ${styles["navbar-header"]}`}>
-            <div className="container-fluid">
+            <div className={`container-fluid`}>
                 <HeaderBrand contentLink={"/"} link={brand} />
-                <div className="collapse navbar-collapse">
+                <div className={`collapse navbar-collapse`}>
                     <HeaderList>
                         {menuItemsArray.map((item, index) => (
                             <HeaderListItem key={index} contentLink={`/${item.toLowerCase()}`} link={item} />
                         ))}
-                        {/* <HeaderListItem contentLink={"/faq"} link={"FAQ"} />
-                        <HeaderListItem contentLink={"#"} link={"Cadastrar"} /> */}
                     </HeaderList>
                     <HeaderTagLine content={tagLine} />
                 </div>

@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Ariana Grande",
+        "genre": "Pop",
+        "image": "images/cardsHome/ariana_positions.jpeg",
+        "audio": ""
+    },
+    {
+        "id": 2,
+        "name": "Justin Bieber",
+        "genre": "Pop",
+        "image": "images/cardsHome/justin_purpose.jpeg",
+        "audio": ""
+    },
+    {
+        "id": 3,
+        "name": "Prince",
+        "genre": "Pop",
+        "image": "images/cardsHome/prince_purple_rain.jpg",
+        "audio": ""
+    }
+]

@@ -1,6 +1,6 @@
-export default function FooterTagLine({content}) {
+export default function FooterTagLine({ content }) {
     return (
-        <span className="navbar-text">
+        <span className={`navbar-text`}>
             {content}
         </span>
     )

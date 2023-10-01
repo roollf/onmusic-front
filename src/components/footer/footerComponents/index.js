@@ -1,1 +1,1 @@
-export {default as FooterTagLine} from './footerTagLine';
+export { default as FooterTagLine } from './footerTagLine';

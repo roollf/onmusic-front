@@ -1,0 +1,31 @@
+[
+    {
+        "question": "Não consigo redefinir a senha.",
+        "answer": "Endereço de e-mail antigo? Você precisa ter acesso ao endereço de e-mail cadastrado na sua conta do Spotify para abrir o link de redefinição de senha que nós enviamos. Caso você não tenha acesso, estas são algumas opções: Recupere o acesso ao endereço de e-mail, se possível. Crie uma nova conta e comece do zero."
+    },
+    {
+        "question": "Não lembro minhas informações de login.",
+        "answer": "Se você não se lembrar da sua senha, use a página de redefinição de senha. Se não se lembrar do seu e-mail ou nome de usuário, acesse a página de redefinição de senha e insira os endereços de e-mail que você pode ter usado para criar uma conta. Quando o endereço registrado no Spotify for inserido, aparecerá uma mensagem dizendo que o e-mail de redefinição de senha foi enviado."
+    },
+    {
+        "question": "Formas de pagamento.",
+        "answer": "Você pode pagar pelo Spotify Premium de muitas maneiras:",
+        "list": {
+            "1": "Cartão de crédito/débito",
+            "2": "Cartões pré-pagos",
+            "3": "PayPal",
+            "4": "Vales-presente",
+            "5": "Pagamento móvel",
+            "6": "Plano pré-pago"
+        }
+    },
+    {
+        "question": "Atualizar dados de pagamento.",
+        "answer": "Para atualizar ou mudar seus detalhes de pagamento:",
+        "list": {
+            "1": "Entre na página da sua conta.",
+            "2": "Em Seu plano, clique em ATUALIZAR ao lado da forma de pagamento.",
+            "3": "Insira uma nova forma de pagamento."
+        }
+    }
+]

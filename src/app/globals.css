@@ -26,6 +26,15 @@ a {
   text-decoration: none;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 6rem 6rem 6rem;
+  min-height: 100vh;
+}
+
 /* * {
   box-sizing: border-box;
   padding: 0;
