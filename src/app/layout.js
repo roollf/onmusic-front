@@ -1,7 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { AppWrapper, Header, Footer } from '@/components'
+import { HeaderGenerator, FooterGenerator } from './utils';
+import { AppWrapper } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,11 +15,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header brand={"OnMusic"} menuItems={"FAQ, Cadastrar"} tagLine={"Music is our culture."} />
+        <HeaderGenerator />
           <AppWrapper>
             {children}
           </AppWrapper>
-        <Footer tagLine={"OnMusic © 2023"} />
+        <FooterGenerator />
       </body>
     </html>
   )

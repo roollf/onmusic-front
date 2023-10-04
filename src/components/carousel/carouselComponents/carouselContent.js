@@ -1,9 +1,17 @@
-export default function CarouselContent({ items }) {
+import Image from "next/image";
+
+export default function CarouselContent({ item }) {
     return (
         <>
-            {items.map((item, index) => (
+            {item.map((item, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? "active" : ""}`}>
-                    <img src={item.imageUrl} className={`d-block w-100`} alt={item.altText} />
+                    <Image
+                        src={item.image}
+                        alt={`Imagem ${item.id}`}
+                        width={800}
+                        height={450}
+                        layout="responsive"
+                    />
                 </div>
             ))
             }

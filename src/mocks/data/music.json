@@ -3,21 +3,27 @@
         "id": 1,
         "name": "Ariana Grande",
         "genre": "Pop",
-        "image": "images/cardsHome/ariana_positions.jpeg",
+        "image": "/images/cardsHome/ariana_positions.jpg",
+        "about": "With her four-octave vocal acrobatics and iconic image, American singer, songwriter, and actress Ariana Grande solidified her place as one of the quintessential pop stars of her generation, racking up stacks of awards and chart records in the process.",
+        "link": "https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR",
         "audio": ""
     },
     {
         "id": 2,
         "name": "Justin Bieber",
         "genre": "Pop",
-        "image": "images/cardsHome/justin_purpose.jpeg",
+        "image": "/images/cardsHome/justin_purpose.jpg",
+        "about": "With over 86 billion career streams and over 78 million albums sold worldwide, Justin Bieber continues to reign as one of the biggest artists in the world.",
+        "link": "https://open.spotify.com/intl-pt/artist/1uNFoZAHBGtllmzznpCI3s",
         "audio": ""
     },
     {
         "id": 3,
         "name": "Prince",
-        "genre": "Pop",
-        "image": "images/cardsHome/prince_purple_rain.jpg",
+        "genre": ["Pop", "Rock"],
+        "image": "/images/cardsHome/prince_purple_rain.jpg",
+        "about": "No other artist of the rock & roll era compares to Prince. He was the rare combination of a visionary pop conceptualist and master musician who could capture the sounds he imagined, a quality that fueled his remarkable success in the 1980s.",
+        "link": "https://open.spotify.com/intl-pt/artist/5a2EaR3hamoenG9rDuVn8j",
         "audio": ""
     }
 ]

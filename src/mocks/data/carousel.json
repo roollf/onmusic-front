@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "image": "images/carouselHome/carousel-1.jpeg"
+        "image": "/images/carouselHome/carousel-1.png"
     },
     {
         "id": 2,
-        "image": "images/carouselHome/carousel-2.jpeg"
+        "image": "/images/carouselHome/carousel-2.png"
     },
     {
         "id": 3,
-        "image": "images/carouselHome/carousel-3.jpeg"
+        "image": "/images/carouselHome/carousel-3.png"
     }
 ]

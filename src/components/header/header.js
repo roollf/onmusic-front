@@ -5,7 +5,7 @@ export default function Header({ brand, menuItems, tagLine }) {
     const menuItemsArray = menuItems.split(',').map(item => item.trim());
     
     return (
-        <nav className={`navbar navbar-expand-lg ${styles["navbar-header"]}`}>
+        <nav className={`navbar navbar-expand-lg ${styles["navbar-header"]} ${styles["navbar-header-border"]}`}>
             <div className={`container-fluid`}>
                 <HeaderBrand contentLink={"/"} link={brand} />
                 <div className={`collapse navbar-collapse`}>

@@ -1,14 +1,15 @@
 import Link from "next/link";
+import styles from "@/components/card/card.module.css"
 
-export default function CardBodyContent({ title, content }) {
+export default function CardBodyContent({ item }) {
     return (
         <>
-            <h5 className={`card-title`}>{title}</h5>
+            <h5 className={`card-title`}>{item.name}</h5>
             <p className={`card-text`}>
-                {content}
+                {item.about}
             </p>
-            <Link href={`#`} className={`btn btn-primary`}>
-                Go somewhere
+            <Link href={`${item.link}`} className={`btn ${styles["card-content-button"]}`}>
+                Go to songs
             </Link>
         </>
     )

@@ -1,5 +1,4 @@
 .card-content {
-    /* padding: 0.2rem 0.3rem; */
     border-radius: var(--border-radius);
     background: rgba(var(--card-color-rgb), 0);
     border: 1px solid rgba(var(--card-border-color-rgb), 0);
@@ -7,7 +6,6 @@
     font-family: var(--font-mono);
     color: inherit;
 }
-
 
 .card-content h5 {
     font-weight: 600;
@@ -40,4 +38,8 @@
 
 .card-content-button:hover {
     border: 1px solid rgba(var(--card-border-color-rgb), 0.3);
+}
+
+.card-content-image {
+    border-radius: var(--border-radius);
 }

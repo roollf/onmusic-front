@@ -9,14 +9,14 @@ export default function CarouselButton({ directionInput, parentSelector }) {
     } else {
         hiddenContent = "Next";
     }
-    const dataBsSlide = `${direction}`;
-    const targetSelector = `#${parentSelector}`;
+    const dataBsSlide = direction;
+    const targetSelector = parentSelector;
 
     return (
         <button
             className={`carousel-control-${direction === "prev" ? "prev" : "next"} ${styles["carousel-control-button"]}`}
             type="button"
-            data-bs-target={targetSelector}
+            data-bs-target={`#${targetSelector}`}
             data-bs-slide={dataBsSlide}
         >
             <span className={`carousel-control-${direction === "prev" ? "prev" : "next"}-icon`} aria-hidden="true" />

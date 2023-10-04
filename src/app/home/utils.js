@@ -1,19 +1,20 @@
-import { Card } from "@/components";
+import { Card, Carousel } from "@/components";
 
+export function MusicCardGenerator() {
+    const data = require('@/mocks/data/music.json');
+    return (
+        data.map((item) => {
+            const artist = item;
+            return (
+                <Card music={artist} />
+            )
+        })
+    );
+}
 
-export const MusicCardGenerator = () => {
-    const data = require('@/mocks/data.json');
-    const images = require.context('../../../public/images/cardsHome', false, /^\.\/.*\.(jpeg|jpg|png)$/);
-    // console.log(data[0].genero);
-    return images.keys().map((item, index) => {
-        const fileName = item.replace('./', '');
-        return (
-            <Card
-            music = {{
-                imageUrl: `/images/cardsHome/${fileName}`,
-                altText: `Imagem ${index + 1}`
-            }}
-            />
-        )
-    });
+export function CarouselGenerator() {
+    const data = require('@/mocks/data/carousel.json');
+    return (
+        <Carousel carouselId={"carouselHome"} image={data} />
+    );
 }

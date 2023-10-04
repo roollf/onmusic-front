@@ -4,6 +4,10 @@
     font-size: x-small;
 }
 
+.navbar-footer-border {
+    border-top: 1px solid rgba(var(--callout-border-color-rgb), 0.2);
+}
+
 .navbar-footer span {
     color: inherit;
 }

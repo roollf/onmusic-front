@@ -1,9 +1,15 @@
+import Image from 'next/image';
 import styles from '@/components/card/card.module.css';
 
 export default function CardImage({ item }) {
-
-    console.log(item)
     return (
-        <img src={item.imageUrl} className="card-img-top" alt={item.altText} />
+        <Image
+            className={`${styles["card-content-image"]}`}
+            src={item.image}
+            alt={`Imagem ${item.id}`}
+            width={350}
+            height={350}
+            layout="responsive"
+        />
     )
 }
