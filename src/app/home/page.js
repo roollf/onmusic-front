@@ -3,7 +3,7 @@ import { MusicCardGenerator, CarouselGenerator } from './utils';
 
 export default function HomeApp() {
   return (
-    <main className="main">
+    <main className={styles.main}>
       <CarouselGenerator />
       <div className={styles.description}>
         <h2>

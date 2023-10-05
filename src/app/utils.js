@@ -1,4 +1,4 @@
-import { Header, Footer } from "@/components";
+import { Header, Footer } from '@/components';
 
 export function HeaderGenerator() {
     return (

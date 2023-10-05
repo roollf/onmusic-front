@@ -6,7 +6,7 @@ export default function CarouselIndicator({ item, parentSelector }) {
             {item.map((item, index) => (
                 <button
                     key={index}
-                    type={`button`}
+                    type="button"
                     data-bs-target={`#${targetSelector}`}
                     data-bs-slide-to={index}
                     className={`${index === 0 ? "active" : ""}`}

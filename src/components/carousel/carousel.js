@@ -4,7 +4,7 @@ import { CarouselButton, CarouselContent, CarouselIndicator } from './carouselCo
 export default function Carousel({ carouselId, image }) {
     return (
         <div id={carouselId} className={`carousel slide ${styles["carousel-slide-content"]}`}>
-            <div className={`carousel-indicators`}>
+            <div className="carousel-indicators">
                 <CarouselIndicator item={image} parentSelector={carouselId} />
             </div>
             <div className={`carousel-inner ${styles["carousel-inner-content"]}`}>

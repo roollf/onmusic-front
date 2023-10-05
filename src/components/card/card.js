@@ -5,7 +5,7 @@ export default function Card({ music }) {
     return (
         <div className={`card ${styles["card-content"]}`}>
             <CardImage item={music} />
-            <div className={`card-body`}>
+            <div className="card-body">
                 <CardBodyContent item={music} />
             </div>
         </div>

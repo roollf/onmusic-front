@@ -1,0 +1,31 @@
+.accordion-header {
+    font-family: var(--font-mono);
+    color: inherit;
+    font-weight: 600;
+}
+
+.accordion-body-content p,
+.accordion-body-content li {
+    font-family: var(--font-mono);
+    color: inherit;
+}
+
+.accordion-body-button {
+    background: rgba(var(--card-color-rgb), 0);
+    border: 1px solid rgba(var(--card-border-color-rgb), 0);
+    color: inherit;
+}
+
+.accordion-body-button:hover {
+    border: 1px solid rgba(var(--card-border-color-rgb), 0.3);
+}
+
+.accordion-body-button:focus {
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/* .accordion-body-button:not(.collapsed) {
+    color: var(--main-color);
+    background-color: rgba(var(--card-color-rgb), 0.2);
+} */

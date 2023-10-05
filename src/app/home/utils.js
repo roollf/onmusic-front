@@ -1,4 +1,4 @@
-import { Card, Carousel } from "@/components";
+import { Card, Carousel } from '@/components';
 
 export function MusicCardGenerator() {
     const data = require('@/mocks/data/music.json');

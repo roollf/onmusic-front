@@ -1,12 +1,20 @@
+import styles from '@/components/accordion/accordion.module.css';
+
 export default function AccordionContent({ item, parentSelector }) {
     const targetSelector = parentSelector;
-    
+    const hasList = item.hasOwnProperty("list");
+
     return (
         <div id={`flush-collapse${item.idString}`} className="accordion-collapse collapse" data-bs-parent={`#${targetSelector}`}>
-            <div className="accordion-body">
-                Placeholder content for this accordion, which is intended to demonstrate
-                the <code>.accordion-flush</code> class. This is the first item's
-                accordion body.
+            <div className={`accordion-body ${styles["accordion-body-content"]}`}>
+                <p>{item.answer}</p>
+                {hasList && (
+                    <ul>
+                        {Object.values(item.list).map((value, index) => (
+                            <li key={index}>{value}</li>
+                        ))}
+                    </ul>
+                )}
             </div>
         </div>
     )
