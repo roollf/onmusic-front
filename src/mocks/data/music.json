@@ -1,29 +1,86 @@
 [
     {
         "id": 1,
-        "name": "Ariana Grande",
-        "genre": "Pop",
-        "image": "/images/cardsHome/ariana_positions.jpg",
-        "about": "With her four-octave vocal acrobatics and iconic image, American singer, songwriter, and actress Ariana Grande solidified her place as one of the quintessential pop stars of her generation, racking up stacks of awards and chart records in the process.",
+        "name": "Lofi Beats",
+        "genre": ["Lofi Hip-Hop", "Lofi Jazz", "Lofi Eletrônico", "Lofi Pop"],
+        "image": "/images/cardsHome/lofi-beats.jpg",
+        "about": "Uma playlist lofi suave e relaxante, perfeita para criar um ambiente tranquilo e inspirador.",
         "link": "https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR",
-        "audio": ""
+        "music": [
+            {
+                "id": 1,
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 2,
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 3,
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "nome": "",
+                "audio": ""
+            }
+        ]
     },
     {
         "id": 2,
-        "name": "Justin Bieber",
-        "genre": "Pop",
-        "image": "/images/cardsHome/justin_purpose.jpg",
-        "about": "With over 86 billion career streams and over 78 million albums sold worldwide, Justin Bieber continues to reign as one of the biggest artists in the world.",
+        "name": "Peaceful Meditation",
+        "genre": ["Meditação Sonora", "Ambient", "New Age", "Chillout"],
+        "image": "/images/cardsHome/peaceful-meditation.jpg",
+        "about": "É a trilha sonora perfeita para momentos de tranquilidade, criando um ambiente propício para meditar e encontrar serenidade.",
         "link": "https://open.spotify.com/intl-pt/artist/1uNFoZAHBGtllmzznpCI3s",
-        "audio": ""
+        "music": [
+            {
+                "id": 1,
+                "image": "/images/cardsHome/peaceful-meditation.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 2,
+                "image": "/images/cardsHome/peaceful-meditation.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 3,
+                "image": "/images/cardsHome/peaceful-meditation.jpg",
+                "nome": "",
+                "audio": ""
+            }
+        ]
     },
     {
         "id": 3,
-        "name": "Prince",
-        "genre": ["Pop", "Rock"],
-        "image": "/images/cardsHome/prince_purple_rain.jpg",
-        "about": "No other artist of the rock & roll era compares to Prince. He was the rare combination of a visionary pop conceptualist and master musician who could capture the sounds he imagined, a quality that fueled his remarkable success in the 1980s.",
+        "name": "Nature Sounds",
+        "genre": ["Sons da Natureza", "Ambient", "New Age", "Meditação"],
+        "image": "/images/cardsHome/nature-sounds.jpg",
+        "about": "Oferece a beleza sonora da natureza em uma playlist que acalma a alma com sons de pássaros, riachos e ventos suaves.",
         "link": "https://open.spotify.com/intl-pt/artist/5a2EaR3hamoenG9rDuVn8j",
-        "audio": ""
+        "music": [
+            {
+                "id": 1,
+                "image": "/images/cardsHome/nature-sounds.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 2,
+                "image": "/images/cardsHome/nature-sounds.jpg",
+                "nome": "",
+                "audio": ""
+            },
+            {
+                "id": 3,
+                "image": "/images/cardsHome/nature-sounds.jpg",
+                "nome": "",
+                "audio": ""
+            }
+        ]
     }
 ]

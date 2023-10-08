@@ -7,7 +7,7 @@ export default function HomeApp() {
       <CarouselGenerator />
       <div className={styles.description}>
         <h2>
-          Top Artists
+          Playlists
         </h2>
       </div>
       <div className={styles.grid}>
