@@ -1,13 +1,13 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 2rem 4rem 4rem 4rem;
   min-height: 100vh;
 }
 
-.description {
+/* .description {
   display: inherit;
   justify-content: center;
   align-items: inherit;
@@ -34,4 +34,4 @@
   grid-row-gap: 2rem;
   max-width: 100%;
   width: var(--max-width);
-}
+} */

@@ -11,8 +11,7 @@
   font-weight: 700;
 }
 
-.navbar-header-brand:hover,
-.navbar-header-brand:focus {
+.navbar-header-brand:hover {
   color: var(--main-color);
 }
 
@@ -22,12 +21,11 @@
 }
 
 .navbar-header a {
-  color: inherit;
+  color: var(--foreground-color);
   text-decoration: none;
   transition: color .15s ease-in-out;
 }
 
-.navbar-header-link a:hover,
-.navbar-header-link a:focus {
+.navbar-header-link a:hover {
   color: var(--secondary-color);
 }

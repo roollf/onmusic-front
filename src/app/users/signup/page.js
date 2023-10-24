@@ -1,12 +1,7 @@
-import { useState } from "react";
+// import { UserSignup } from "@/components";
 
-export default function UserSignup() {
-    const [email, setEmail] = useState();
-    const [senha, setSenha] = useState();
-
-    return (
-        <>
-            
-        </>
-    )
-}
+// export default function Cadastrar() {
+//     return (
+//         <UserSignup />
+//     )
+// }

@@ -1,12 +1,12 @@
 import styles from '@/components/card/card.module.css';
 import { CardBodyContent, CardImage } from './cardComponents';
 
-export default function Card({ music }) {
+export default function Card({ musicObject }) {
     return (
         <div className={`card ${styles["card-content"]}`}>
-            <CardImage item={music} />
+            <CardImage musicObject={musicObject} />
             <div className="card-body">
-                <CardBodyContent item={music} />
+                <CardBodyContent musicObject={musicObject} />
             </div>
         </div>
     )

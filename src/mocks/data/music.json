@@ -1,85 +1,91 @@
 [
     {
-        "id": 1,
+        "id": "1",
         "name": "Lofi Beats",
         "genre": ["Lofi Hip-Hop", "Lofi Jazz", "Lofi Eletrônico", "Lofi Pop"],
         "image": "/images/cardsHome/lofi-beats.jpg",
         "about": "Uma playlist lofi suave e relaxante, perfeita para criar um ambiente tranquilo e inspirador.",
-        "link": "https://open.spotify.com/intl-pt/artist/66CXWjxzNUsdJxJ2JdwvnR",
         "music": [
             {
-                "id": 1,
+                "id": "1",
                 "image": "/images/cardsHome/lofi-beats.jpg",
-                "nome": "",
-                "audio": ""
+                "artist": "Liborio Conti",
+                "song": "Bright and Clear",
+                "audio": "/audios/bright-and-clear.mp3"
             },
             {
-                "id": 2,
+                "id": "2",
                 "image": "/images/cardsHome/lofi-beats.jpg",
-                "nome": "",
-                "audio": ""
+                "artist": "Liborio Conti",
+                "song": "I Believe",
+                "audio": "/audios/i-believe.mp3"
             },
             {
-                "id": 3,
+                "id": "3",
                 "image": "/images/cardsHome/lofi-beats.jpg",
-                "nome": "",
-                "audio": ""
+                "artist":"Liborio Conti",
+                "song": "Inspiring Ambient",
+                "audio": "/audios/inspiring-ambient.mp3"
             }
         ]
     },
     {
-        "id": 2,
+        "id": "2",
         "name": "Peaceful Meditation",
         "genre": ["Meditação Sonora", "Ambient", "New Age", "Chillout"],
         "image": "/images/cardsHome/peaceful-meditation.jpg",
         "about": "É a trilha sonora perfeita para momentos de tranquilidade, criando um ambiente propício para meditar e encontrar serenidade.",
-        "link": "https://open.spotify.com/intl-pt/artist/1uNFoZAHBGtllmzznpCI3s",
         "music": [
             {
-                "id": 1,
-                "image": "/images/cardsHome/peaceful-meditation.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "1",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist": "Liborio Conti",
+                "song": "Bright and Clear",
+                "audio": "/audios/bright-and-clear.mp3"
             },
             {
-                "id": 2,
-                "image": "/images/cardsHome/peaceful-meditation.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "2",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist": "Liborio Conti",
+                "song": "I Believe",
+                "audio": "/audios/i-believe.mp3"
             },
             {
-                "id": 3,
-                "image": "/images/cardsHome/peaceful-meditation.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "3",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist":"Liborio Conti",
+                "song": "Inspiring Ambient",
+                "audio": "/audios/inspiring-ambient.mp3"
             }
         ]
     },
     {
-        "id": 3,
+        "id": "3",
         "name": "Nature Sounds",
         "genre": ["Sons da Natureza", "Ambient", "New Age", "Meditação"],
         "image": "/images/cardsHome/nature-sounds.jpg",
         "about": "Oferece a beleza sonora da natureza em uma playlist que acalma a alma com sons de pássaros, riachos e ventos suaves.",
-        "link": "https://open.spotify.com/intl-pt/artist/5a2EaR3hamoenG9rDuVn8j",
         "music": [
             {
-                "id": 1,
-                "image": "/images/cardsHome/nature-sounds.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "1",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist": "Liborio Conti",
+                "song": "Bright and Clear",
+                "audio": "/audios/bright-and-clear.mp3"
             },
             {
-                "id": 2,
-                "image": "/images/cardsHome/nature-sounds.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "2",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist": "Liborio Conti",
+                "song": "I Believe",
+                "audio": "/audios/i-believe.mp3"
             },
             {
-                "id": 3,
-                "image": "/images/cardsHome/nature-sounds.jpg",
-                "nome": "",
-                "audio": ""
+                "id": "3",
+                "image": "/images/cardsHome/lofi-beats.jpg",
+                "artist":"Liborio Conti",
+                "song": "Inspiring Ambient",
+                "audio": "/audios/inspiring-ambient.mp3"
             }
         ]
     }

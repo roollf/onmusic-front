@@ -7,6 +7,7 @@
 .accordion-body-content p,
 .accordion-body-content li {
     font-family: var(--font-mono);
+    font-weight: lighter;
     color: inherit;
 }
 
