@@ -12,6 +12,10 @@ Nesta fase inicial de desenvolvimento, o projeto inclui as seguintes páginas:
 
 `FAQ` Uma página de perguntas frequentes, que pode conter informações sobre como usar a aplicação, como funciona o streaming de música e outras dúvidas comuns dos usuários.
 
+`Cadastro` Uma nova funcionalidade que permite aos usuários criar uma conta na aplicação, personalizar seu perfil e salvar suas preferências musicais.
+
+`Albums` Outra nova funcionalidade que permitirá aos usuários explorar álbuns de artistas, ver a lista de faixas em cada álbum e reproduzi-las.
+
 ## Tecnologias 🛠
 
 - Javascript.
