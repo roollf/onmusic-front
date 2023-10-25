@@ -20,7 +20,7 @@ Nesta fase inicial de desenvolvimento, o projeto inclui as seguintes páginas:
 
 - Javascript.
 - HTML e CSS.
-- Botstrap.
+- Bootstrap.
 - React.js.
 - Next.js.
 - Node.js.
