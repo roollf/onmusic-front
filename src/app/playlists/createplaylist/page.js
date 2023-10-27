@@ -10,12 +10,9 @@ export default function CreatePlaylist() {
     const [playlist, setPlaylist] = useState([]);
     const [playlistName, setPlaylistName] = useState('');
     const [playlistType, setPlaylistType] = useState('');
-    // const songs = [
-    //     'Song 1',
-    //     'Song 2',
-    //     'Song 3',
-    // ];
     const [songs, setSongs] = useState([]);
+    const [successMessage, setSuccessMessage] = useState('');
+
 
     useEffect(() => {
         axios.get('http://localhost:3004/musics').then(
@@ -38,6 +35,12 @@ export default function CreatePlaylist() {
         axios.post('http://localhost:3004/playlist/', data)
             .then((response) => {
                 console.log('Playlist criada com sucesso:', response.data);
+                // mostrar mensagem de acerto
+                setSuccessMessage('Playlist criada com sucesso!');
+                // limpar playlist após envio
+                setPlaylistName('');
+                setPlaylistType('');
+                setPlaylist([]);
             })
             .catch((error) => {
                 console.error('Erro ao criar a playlist:', error);
@@ -95,6 +98,12 @@ export default function CreatePlaylist() {
 
             <button type="submit" className="btn btn-secondary">Criar</button>
         </form>
+        <br/>
+        <div className="row">
+            <div className="col-md">
+                <p className="text-success">{successMessage}</p>
+            </div>
+        </div>
 
         </div>
     </div>
