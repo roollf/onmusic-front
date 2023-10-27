@@ -1,0 +1,19 @@
+.main {
+    font-family: var(--font-mono);
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#list{
+    color: whitesmoke;
+    background-color: #424242;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+#container{
+    width: 60%;
+}
