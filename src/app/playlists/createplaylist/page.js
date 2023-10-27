@@ -1,7 +1,7 @@
 'use client';
-import { SongDropdown, SongGenerator, SongList } from "@/components";
+import { SongDropdown, SongList } from "@/components";
 import axios from 'axios';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './page.module.css';
 
 export default function CreatePlaylist() {
@@ -10,19 +10,21 @@ export default function CreatePlaylist() {
     const [playlist, setPlaylist] = useState([]);
     const [playlistName, setPlaylistName] = useState('');
     const [playlistType, setPlaylistType] = useState('');
-    const songs = [
-        'Song 1',
-        'Song 2',
-        'Song 3',
-    ];
-    // const [songs, setSongs] = useState({ musics: []});
-    const songsTest = SongGenerator();
+    // const songs = [
+    //     'Song 1',
+    //     'Song 2',
+    //     'Song 3',
+    // ];
+    const [songs, setSongs] = useState([]);
 
-    // useEffect(() => {
-    //     axios.get(`http://localhost:3004/albums`).then(
-    //         (response) => setSongs(response.data)
-    //     )
-    // }, [])
+    useEffect(() => {
+        axios.get('http://localhost:3004/musics').then(
+            (response) => {
+                console.log(response.data)
+                setSongs(response.data);
+            }
+        )
+    }, [])
 
     function handleSubmit(e) {
         e.preventDefault(); // Isso previne que o formulário recarregue a página
@@ -30,10 +32,10 @@ export default function CreatePlaylist() {
         const data = {
             name: playlistName,
             type: playlistType,
-            songs: playlist
+            musics: playlist
         };
     
-        axios.post('http://localhost:3004/', data)
+        axios.post('http://localhost:3004/playlist/', data)
             .then((response) => {
                 console.log('Playlist criada com sucesso:', response.data);
             })
@@ -89,9 +91,6 @@ export default function CreatePlaylist() {
                 <div className="col-md" id={styles.list}>
                     <SongList playlist={playlist}/>
                 </div>
-                <p>
-                    {songsTest}
-                </p>
             </div>
 
             <button type="submit" className="btn btn-secondary">Criar</button>

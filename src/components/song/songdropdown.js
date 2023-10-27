@@ -3,9 +3,10 @@ export default function SongDropdown({ songs, selectedSong, setSelectedSong }) {
         <select className="form-control" value={selectedSong} onChange={e => setSelectedSong(e.target.value)}>
         <option value="">Selecionar Música</option>
         {songs.map(song => (
-            <option key={song} value={song}>
-            {song}
+            <option key={song.id} value={song.id}>
+                {song.song} {song.duration}
             </option>
+
         ))}
         </select>
     );
