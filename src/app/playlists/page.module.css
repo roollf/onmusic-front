@@ -1,0 +1,17 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem 4rem 4rem;
+    min-height: 100vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25%, auto));
+    grid-column-gap: 4rem;
+    grid-row-gap: 2rem;
+    max-width: 100%;
+    width: var(--max-width);
+}

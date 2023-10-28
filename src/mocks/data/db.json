@@ -414,15 +414,7 @@
     "audio": "/audios/lofi-fofi/04-fofi.mp3"
 }
 ],
-"playlist": [
-{
-    "name": "Desenvolvimento",
-    "type": "Estudar",
-    "musics": [
-    "[object Object]"
-    ],
-    "id": 1
-},
+"playlists": [
 {
     "name": "teste8989",
     "type": "Estudar",
