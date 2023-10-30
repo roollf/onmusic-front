@@ -1,428 +1,453 @@
 {
-"albums": [
-{
-    "id": "1",
-    "artist": "Liborio Conti",
-    "name": "Lofi Beats",
-    "genre": [
-    "Lofi Hip-Hop",
-    "Lofi Jazz",
-    "Lofi Eletrônico",
-    "Lofi Pop"
-    ],
-    "image": "/images/albums/lofi-beats.jpg",
-    "about": "Batidas suaves e envolventes para uma experiência relaxante.",
-    "musics": [
+  "albums": [
     {
-        "id": "1",
-        "song": "Bright and Clear",
-        "duration": "6:03",
-        "audio": "/audios/liborio-conti/01-bright-and-clear.mp3"
+      "id": "1",
+      "artist": "Liborio Conti",
+      "name": "Lofi Beats",
+      "genre": [
+        "Lofi Hip-Hop",
+        "Lofi Jazz",
+        "Lofi Eletrônico",
+        "Lofi Pop"
+      ],
+      "image": "/images/albums/lofi-beats.jpg",
+      "about": "Batidas suaves e envolventes para uma experiência relaxante.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "Bright and Clear",
+          "duration": "6:03",
+          "audio": "/audios/liborio-conti/01-bright-and-clear.mp3"
+        },
+        {
+          "id": "2",
+          "song": "I Believe",
+          "duration": "5:13",
+          "audio": "/audios/liborio-conti/02-i-believe.mp3"
+        },
+        {
+          "id": "3",
+          "song": "Inspiring Ambient",
+          "duration": "5:07",
+          "audio": "/audios/liborio-conti/03-inspiring-ambient.mp3"
+        }
+      ]
     },
     {
-        "id": "2",
-        "song": "I Believe",
-        "duration": "5:13",
-        "audio": "/audios/liborio-conti/02-i-believe.mp3"
+      "id": "2",
+      "artist": "REUTSKY",
+      "name": "lofi fofi",
+      "genre": [
+        "Lofi",
+        "New Age",
+        "Chillout",
+        "Sad",
+        "Lounge"
+      ],
+      "image": "/images/albums/lofi-fofi.jpeg",
+      "about": "Um aconchegante abraço musical para relaxar e descontrair.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "why",
+          "duration": "3:56",
+          "audio": "/audios/lofi-fofi/01-why.mp3"
+        },
+        {
+          "id": "2",
+          "song": "four",
+          "duration": "2:08",
+          "audio": "/audios/lofi-fofi/02-four.mp3"
+        },
+        {
+          "id": "3",
+          "song": "summer memories",
+          "duration": "0:51",
+          "audio": "/audios/lofi-fofi/03-summer-memories.mp3"
+        },
+        {
+          "id": "4",
+          "song": "fofi",
+          "duration": "3:03",
+          "audio": "/audios/lofi-fofi/04-fofi.mp3"
+        }
+      ]
     },
     {
-        "id": "3",
-        "song": "Inspiring Ambient",
-        "duration": "5:07",
-        "audio": "/audios/liborio-conti/03-inspiring-ambient.mp3"
+      "id": "3",
+      "artist": "LONGMAN",
+      "name": "Blood of Fish",
+      "genre": [
+        "Eletronic",
+        "Down Tempo",
+        "Synthesizer",
+        "Groovy",
+        "Peaceful",
+        "Guitar",
+        "Psychedelic",
+        "Jazz"
+      ],
+      "image": "/images/albums/blood-of-fish.jpeg",
+      "about": "Um encontro eletrônico downtempo, com toques de guitarras, grooves e psicodelia em um cenário jazzístico.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "Fuss About Doomsday",
+          "duration": "4:01",
+          "audio": "/audios/blood-of-fish/01-fuss-about-doomsday.mp3"
+        },
+        {
+          "id": "2",
+          "song": "Blood of Fish",
+          "duration": "7:16",
+          "audio": "/audios/blood-of-fish/02-blood-of-fish.mp3"
+        },
+        {
+          "id": "3",
+          "song": "Breakfast on the Run",
+          "duration": "6:41",
+          "audio": "/audios/blood-of-fish/03-breakfast-on-the-run.mp3"
+        },
+        {
+          "id": "4",
+          "song": "Morisson. American Dub Prayer",
+          "duration": "5:28",
+          "audio": "/audios/blood-of-fish/04-morisson-.-american-dub-prayer.mp3"
+        },
+        {
+          "id": "5",
+          "song": "21th Century Charming Woman",
+          "duration": "4:51",
+          "audio": "/audios/blood-of-fish/05-21th-century-charming-woman.mp3"
+        },
+        {
+          "id": "6",
+          "song": "Radioactivity",
+          "duration": "4:29",
+          "audio": "/audios/blood-of-fish/06-radioactivity.mp3"
+        },
+        {
+          "id": "7",
+          "song": "Flying on a Broomstick",
+          "duration": "4:17",
+          "audio": "/audios/blood-of-fish/07-flying-on-a-broomstick.mp3"
+        },
+        {
+          "id": "8",
+          "song": "Eletric Soul",
+          "duration": "4:54",
+          "audio": "/audios/blood-of-fish/08-eletric-soul.mp3"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "artist": "UISLOBAE",
+      "name": "Uislobae",
+      "genre": [
+        "Eletronic",
+        "Down Tempo",
+        "Synthesizer",
+        "Groovy",
+        "Peaceful",
+        "World",
+        "Breaks"
+      ],
+      "image": "/images/albums/uislobae.jpeg",
+      "about": "Uma jornada eletrônica downtempo com sintetizadores, grooves cativantes e influências globais, criando uma atmosfera serena.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "Intro",
+          "duration": "0:30",
+          "audio": "/audios/uislobae/01-intro.mp3"
+        },
+        {
+          "id": "2",
+          "song": "Cykady Przedostaja Sie Kominem",
+          "duration": "4:57",
+          "audio": "/audios/uislobae/02-cykady-przedostaja-sie-kominem.mp3"
+        },
+        {
+          "id": "3",
+          "song": "Zaklinacz Krawatow",
+          "duration": "0:37",
+          "audio": "/audios/uislobae/03-zaklinacz-krawatow.mp3"
+        },
+        {
+          "id": "4",
+          "song": "Zaklinacz Robakow",
+          "duration": "5:15",
+          "audio": "/audios/uislobae/04-zaklinacz-robakow.mp3"
+        },
+        {
+          "id": "5",
+          "song": "Rozbzykanie",
+          "duration": "5:38",
+          "audio": "/audios/uislobae/05-rozbzykanie.mp3"
+        },
+        {
+          "id": "6",
+          "song": "Gadka, Co Rabie Drwa",
+          "duration": "5:02",
+          "audio": "/audios/uislobae/06-gadka-,-co-rabie-drwa.mp3"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "artist": "MR. VOLTAGE",
+      "name": "Lofi Days Volume 1",
+      "genre": [
+        "Lofi",
+        "Synthesizer",
+        "Chillhop",
+        "Drum Machine"
+      ],
+      "image": "/images/albums/lofi-days-volume-1.jpeg",
+      "about": "Uma coleção relaxante de batidas lo-fi e sintetizadores que definem o ambiente perfeito para dias tranquilos.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "Midnight Peace",
+          "duration": "2:16",
+          "audio": "/audios/lofi-days-volume-1/01-midnight-peace.mp3"
+        },
+        {
+          "id": "2",
+          "song": "midnight jam_3",
+          "duration": "2:48",
+          "audio": "/audios/lofi-days-volume-1/02-midnight-jam-3.mp3"
+        },
+        {
+          "id": "3",
+          "song": "eyes are closing",
+          "duration": "2:16",
+          "audio": "/audios/lofi-days-volume-1/03-eyes-are-closing.mp3"
+        },
+        {
+          "id": "4",
+          "song": "midnight jam_2",
+          "duration": "3:12",
+          "audio": "/audios/lofi-days-volume-1/04-midnight-jam-2.mp3"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "artist": "FREE LOBA",
+      "name": "Loba Walk",
+      "genre": [
+        "Eletronic",
+        "Synthesizer",
+        "Energetic",
+        "Hip Hop Eletronica Pop"
+      ],
+      "image": "/images/albums/loba-walk.jpeg",
+      "about": "Uma fusão eletrônica energética e envolvente com elementos de hip-hop, pop e sintetizadores cativantes em 'Loba Walk'.",
+      "musics": [
+        {
+          "id": "1",
+          "song": "Omicidio virtuale",
+          "duration": "4:33",
+          "audio": "/audios/loba-walk/01-omicidio-virtuale.mp3"
+        },
+        {
+          "id": "2",
+          "song": "Ultima luce",
+          "duration": "2:48",
+          "audio": "/audios/loba-walk/02-ultima-luce.mp3"
+        },
+        {
+          "id": "3",
+          "song": "Fetish mystic night",
+          "duration": "4:39",
+          "audio": "/audios/loba-walk/03-fetish-mystic-night.mp3"
+        },
+        {
+          "id": "4",
+          "song": "Scilito",
+          "duration": "5:14",
+          "audio": "/audios/loba-walk/04-scilto.mp3"
+        },
+        {
+          "id": "5",
+          "song": "So bad (Richman at voice)",
+          "duration": "2:40",
+          "audio": "/audios/loba-walk/05-so-bad-richman-at-voice.mp3"
+        }
+      ]
     }
-    ]
-},
-{
-    "id": "2",
-    "artist": "REUTSKY",
-    "name": "lofi fofi",
-    "genre": [
-    "Lofi",
-    "New Age",
-    "Chillout",
-    "Sad",
-    "Lounge"
-    ],
-    "image": "/images/albums/lofi-fofi.jpeg",
-    "about": "Um aconchegante abraço musical para relaxar e descontrair.",
-    "musics": [
+  ],
+  "users": [],
+  "musics": [
     {
-        "id": "1",
-        "song": "why",
-        "duration": "3:56",
-        "audio": "/audios/lofi-fofi/01-why.mp3"
+      "id": "1",
+      "song": "Omicidio virtuale",
+      "duration": "4:33",
+      "audio": "/audios/loba-walk/01-omicidio-virtuale.mp3"
     },
     {
-        "id": "2",
-        "song": "four",
-        "duration": "2:08",
-        "audio": "/audios/lofi-fofi/02-four.mp3"
+      "id": "2",
+      "song": "Ultima luce",
+      "duration": "2:48",
+      "audio": "/audios/loba-walk/02-ultima-luce.mp3"
     },
     {
-        "id": "3",
-        "song": "summer memories",
-        "duration": "0:51",
-        "audio": "/audios/lofi-fofi/03-summer-memories.mp3"
+      "id": "3",
+      "song": "Fetish mystic night",
+      "duration": "4:39",
+      "audio": "/audios/loba-walk/03-fetish-mystic-night.mp3"
     },
     {
-        "id": "4",
-        "song": "fofi",
-        "duration": "3:03",
-        "audio": "/audios/lofi-fofi/04-fofi.mp3"
+      "id": "4",
+      "song": "Scilito",
+      "duration": "5:14",
+      "audio": "/audios/loba-walk/04-scilto.mp3"
+    },
+    {
+      "id": "5",
+      "song": "So bad (Richman at voice)",
+      "duration": "2:40",
+      "audio": "/audios/loba-walk/05-so-bad-richman-at-voice.mp3"
+    },
+    {
+      "id": "6",
+      "song": "Midnight Peace",
+      "duration": "2:16",
+      "audio": "/audios/lofi-days-volume-1/01-midnight-peace.mp3"
+    },
+    {
+      "id": "7",
+      "song": "midnight jam_3",
+      "duration": "2:48",
+      "audio": "/audios/lofi-days-volume-1/02-midnight-jam-3.mp3"
+    },
+    {
+      "id": "8",
+      "song": "eyes are closing",
+      "duration": "2:16",
+      "audio": "/audios/lofi-days-volume-1/03-eyes-are-closing.mp3"
+    },
+    {
+      "id": "9",
+      "song": "midnight jam_2",
+      "duration": "3:12",
+      "audio": "/audios/lofi-days-volume-1/04-midnight-jam-2.mp3"
+    },
+    {
+      "id": "10",
+      "song": "Intro",
+      "duration": "0:30",
+      "audio": "/audios/uislobae/01-intro.mp3"
+    },
+    {
+      "id": "11",
+      "song": "Cykady Przedostaja Sie Kominem",
+      "duration": "4:57",
+      "audio": "/audios/uislobae/02-cykady-przedostaja-sie-kominem.mp3"
+    },
+    {
+      "id": "12",
+      "song": "Zaklinacz Krawatow",
+      "duration": "0:37",
+      "audio": "/audios/uislobae/03-zaklinacz-krawatow.mp3"
+    },
+    {
+      "id": "13",
+      "song": "Zaklinacz Robakow",
+      "duration": "5:15",
+      "audio": "/audios/uislobae/04-zaklinacz-robakow.mp3"
+    },
+    {
+      "id": "14",
+      "song": "Rozbzykanie",
+      "duration": "5:38",
+      "audio": "/audios/uislobae/05-rozbzykanie.mp3"
+    },
+    {
+      "id": "15",
+      "song": "Gadka, Co Rabie Drwa",
+      "duration": "5:02",
+      "audio": "/audios/uislobae/06-gadka-,-co-rabie-drwa.mp3"
+    },
+    {
+      "id": "16",
+      "song": "Bright and Clear",
+      "duration": "6:03",
+      "audio": "/audios/liborio-conti/01-bright-and-clear.mp3"
+    },
+    {
+      "id": "17",
+      "song": "I Believe",
+      "duration": "5:13",
+      "audio": "/audios/liborio-conti/02-i-believe.mp3"
+    },
+    {
+      "id": "18",
+      "song": "Inspiring Ambient",
+      "duration": "5:07",
+      "audio": "/audios/liborio-conti/03-inspiring-ambient.mp3"
+    },
+    {
+      "id": "19",
+      "song": "why",
+      "duration": "3:56",
+      "audio": "/audios/lofi-fofi/01-why.mp3"
+    },
+    {
+      "id": "20",
+      "song": "four",
+      "duration": "2:08",
+      "audio": "/audios/lofi-fofi/02-four.mp3"
+    },
+    {
+      "id": "21",
+      "song": "summer memories",
+      "duration": "0:51",
+      "audio": "/audios/lofi-fofi/03-summer-memories.mp3"
+    },
+    {
+      "id": "22",
+      "song": "fofi",
+      "duration": "3:03",
+      "audio": "/audios/lofi-fofi/04-fofi.mp3"
     }
-    ]
-},
-{
-    "id": "3",
-    "artist": "LONGMAN",
-    "name": "Blood of Fish",
-    "genre": [
-    "Eletronic",
-    "Down Tempo",
-    "Synthesizer",
-    "Groovy",
-    "Peaceful",
-    "Guitar",
-    "Psychedelic",
-    "Jazz"
-    ],
-    "image": "/images/albums/blood-of-fish.jpeg",
-    "about": "Um encontro eletrônico downtempo, com toques de guitarras, grooves e psicodelia em um cenário jazzístico.",
-    "musics": [
+  ],
+  "playlists": [
     {
-        "id": "1",
-        "song": "Fuss About Doomsday",
-        "duration": "4:01",
-        "audio": "/audios/blood-of-fish/01-fuss-about-doomsday.mp3"
+      "name": "teste8989",
+      "type": "Estudar",
+      "musics": [
+        "3",
+        "6"
+      ],
+      "id": 2
     },
     {
-        "id": "2",
-        "song": "Blood of Fish",
-        "duration": "7:16",
-        "audio": "/audios/blood-of-fish/02-blood-of-fish.mp3"
+      "name": "Relax 2023",
+      "type": "Relaxar",
+      "musics": [
+        "13",
+        "20",
+        "14",
+        "9",
+        "2"
+      ],
+      "id": 3
     },
     {
-        "id": "3",
-        "song": "Breakfast on the Run",
-        "duration": "6:41",
-        "audio": "/audios/blood-of-fish/03-breakfast-on-the-run.mp3"
-    },
-    {
-        "id": "4",
-        "song": "Morisson. American Dub Prayer",
-        "duration": "5:28",
-        "audio": "/audios/blood-of-fish/04-morisson-.-american-dub-prayer.mp3"
-    },
-    {
-        "id": "5",
-        "song": "21th Century Charming Woman",
-        "duration": "4:51",
-        "audio": "/audios/blood-of-fish/05-21th-century-charming-woman.mp3"
-    },
-    {
-        "id": "6",
-        "song": "Radioactivity",
-        "duration": "4:29",
-        "audio": "/audios/blood-of-fish/06-radioactivity.mp3"
-    },
-    {
-        "id": "7",
-        "song": "Flying on a Broomstick",
-        "duration": "4:17",
-        "audio": "/audios/blood-of-fish/07-flying-on-a-broomstick.mp3"
-    },
-    {
-        "id": "8",
-        "song": "Eletric Soul",
-        "duration": "4:54",
-        "audio": "/audios/blood-of-fish/08-eletric-soul.mp3"
+      "name": "",
+      "type": "",
+      "musics": [
+        "13",
+        "7",
+        "17",
+        "21",
+        "8",
+        "1"
+      ],
+      "id": 4
     }
-    ]
-},
-{
-    "id": "4",
-    "artist": "UISLOBAE",
-    "name": "Uislobae",
-    "genre": [
-    "Eletronic",
-    "Down Tempo",
-    "Synthesizer",
-    "Groovy",
-    "Peaceful",
-    "World",
-    "Breaks"
-    ],
-    "image": "/images/albums/uislobae.jpeg",
-    "about": "Uma jornada eletrônica downtempo com sintetizadores, grooves cativantes e influências globais, criando uma atmosfera serena.",
-    "musics": [
-    {
-        "id": "1",
-        "song": "Intro",
-        "duration": "0:30",
-        "audio": "/audios/blood-of-fish/01-intro.mp3"
-    },
-    {
-        "id": "2",
-        "song": "Cykady Przedostaja Sie Kominem",
-        "duration": "4:57",
-        "audio": "/audios/blood-of-fish/02-cykady-przedostaja-sie-kominem.mp3"
-    },
-    {
-        "id": "3",
-        "song": "Zaklinacz Krawatow",
-        "duration": "0:37",
-        "audio": "/audios/blood-of-fish/03-zaklinacz-krawatow.mp3"
-    },
-    {
-        "id": "4",
-        "song": "Zaklinacz Robakow",
-        "duration": "5:15",
-        "audio": "/audios/blood-of-fish/04-zaklinacz-robakow.mp3"
-    },
-    {
-        "id": "5",
-        "song": "Rozbzykanie",
-        "duration": "5:38",
-        "audio": "/audios/blood-of-fish/05-rozbzykanie.mp3"
-    },
-    {
-        "id": "6",
-        "song": "Gadka, Co Rabie Drwa",
-        "duration": "5:02",
-        "audio": "/audios/blood-of-fish/06-gadka-,-co-rabie-drwa.mp3"
-    }
-    ]
-},
-{
-    "id": "5",
-    "artist": "MR. VOLTAGE",
-    "name": "Lofi Days Volume 1",
-    "genre": [
-    "Lofi",
-    "Synthesizer",
-    "Chillhop",
-    "Drum Machine"
-    ],
-    "image": "/images/albums/lofi-days-volume-1.jpeg",
-    "about": "Uma coleção relaxante de batidas lo-fi e sintetizadores que definem o ambiente perfeito para dias tranquilos.",
-    "musics": [
-    {
-        "id": "1",
-        "song": "Midnight Peace",
-        "duration": "2:16",
-        "audio": "/audios/lofi-days-volume-1/01-midnight-peace.mp3"
-    },
-    {
-        "id": "2",
-        "song": "midnight jam_3",
-        "duration": "2:48",
-        "audio": "/audios/lofi-days-volume-1/02-midnight-jam-3.mp3"
-    },
-    {
-        "id": "3",
-        "song": "eyes are closing",
-        "duration": "2:16",
-        "audio": "/audios/lofi-days-volume-1/03-eyes-are-closing.mp3"
-    },
-    {
-        "id": "4",
-        "song": "midnight jam_2",
-        "duration": "3:12",
-        "audio": "/audios/lofi-days-volume-1/04-midnight-jam-2.mp3"
-    }
-    ]
-},
-{
-    "id": "6",
-    "artist": "FREE LOBA",
-    "name": "Loba Walk",
-    "genre": [
-    "Eletronic",
-    "Synthesizer",
-    "Energetic",
-    "Hip Hop Eletronica Pop"
-    ],
-    "image": "/images/albums/loba-walk.jpeg",
-    "about": "Uma fusão eletrônica energética e envolvente com elementos de hip-hop, pop e sintetizadores cativantes em 'Loba Walk'.",
-    "musics": [
-    {
-        "id": "1",
-        "song": "Omicidio virtuale",
-        "duration": "4:33",
-        "audio": "/audios/loba-walk/01-omicidio-virtuale.mp3"
-    },
-    {
-        "id": "2",
-        "song": "Ultima luce",
-        "duration": "2:48",
-        "audio": "/audios/loba-walk/02-ultima-luce.mp3"
-    },
-    {
-        "id": "3",
-        "song": "Fetish mystic night",
-        "duration": "4:39",
-        "audio": "/audios/loba-walk/03-fetish-mystic-night.mp3"
-    },
-    {
-        "id": "4",
-        "song": "Scilito",
-        "duration": "5:14",
-        "audio": "/audios/loba-walk/04-scilto.mp3"
-    },
-    {
-        "id": "5",
-        "song": "So bad (Richman at voice)",
-        "duration": "2:40",
-        "audio": "/audios/loba-walk/05-so-bad-richman-at-voice.mp3"
-    }
-    ]
-}
-],
-"users": [],
-"musics": [
-{
-    "id": "1",
-    "song": "Omicidio virtuale",
-    "duration": "4:33",
-    "audio": "/audios/loba-walk/01-omicidio-virtuale.mp3"
-},
-{
-    "id": "2",
-    "song": "Ultima luce",
-    "duration": "2:48",
-    "audio": "/audios/loba-walk/02-ultima-luce.mp3"
-},
-{
-    "id": "3",
-    "song": "Fetish mystic night",
-    "duration": "4:39",
-    "audio": "/audios/loba-walk/03-fetish-mystic-night.mp3"
-},
-{
-    "id": "4",
-    "song": "Scilito",
-    "duration": "5:14",
-    "audio": "/audios/loba-walk/04-scilto.mp3"
-},
-{
-    "id": "5",
-    "song": "So bad (Richman at voice)",
-    "duration": "2:40",
-    "audio": "/audios/loba-walk/05-so-bad-richman-at-voice.mp3"
-},
-{
-    "id": "6",
-    "song": "Midnight Peace",
-    "duration": "2:16",
-    "audio": "/audios/lofi-days-volume-1/01-midnight-peace.mp3"
-},
-{
-    "id": "7",
-    "song": "midnight jam_3",
-    "duration": "2:48",
-    "audio": "/audios/lofi-days-volume-1/02-midnight-jam-3.mp3"
-},
-{
-    "id": "8",
-    "song": "eyes are closing",
-    "duration": "2:16",
-    "audio": "/audios/lofi-days-volume-1/03-eyes-are-closing.mp3"
-},
-{
-    "id": "9",
-    "song": "midnight jam_2",
-    "duration": "3:12",
-    "audio": "/audios/lofi-days-volume-1/04-midnight-jam-2.mp3"
-},
-{
-    "id": "10",
-    "song": "Intro",
-    "duration": "0:30",
-    "audio": "/audios/blood-of-fish/01-intro.mp3"
-},
-{
-    "id": "11",
-    "song": "Cykady Przedostaja Sie Kominem",
-    "duration": "4:57",
-    "audio": "/audios/blood-of-fish/02-cykady-przedostaja-sie-kominem.mp3"
-},
-{
-    "id": "12",
-    "song": "Zaklinacz Krawatow",
-    "duration": "0:37",
-    "audio": "/audios/blood-of-fish/03-zaklinacz-krawatow.mp3"
-},
-{
-    "id": "13",
-    "song": "Zaklinacz Robakow",
-    "duration": "5:15",
-    "audio": "/audios/blood-of-fish/04-zaklinacz-robakow.mp3"
-},
-{
-    "id": "14",
-    "song": "Rozbzykanie",
-    "duration": "5:38",
-    "audio": "/audios/blood-of-fish/05-rozbzykanie.mp3"
-},
-{
-    "id": "15",
-    "song": "Gadka, Co Rabie Drwa",
-    "duration": "5:02",
-    "audio": "/audios/blood-of-fish/06-gadka-,-co-rabie-drwa.mp3"
-},
-{
-    "id": "16",
-    "song": "Bright and Clear",
-    "duration": "6:03",
-    "audio": "/audios/liborio-conti/01-bright-and-clear.mp3"
-},
-{
-    "id": "17",
-    "song": "I Believe",
-    "duration": "5:13",
-    "audio": "/audios/liborio-conti/02-i-believe.mp3"
-},
-{
-    "id": "18",
-    "song": "Inspiring Ambient",
-    "duration": "5:07",
-    "audio": "/audios/liborio-conti/03-inspiring-ambient.mp3"
-},
-{
-    "id": "19",
-    "song": "why",
-    "duration": "3:56",
-    "audio": "/audios/lofi-fofi/01-why.mp3"
-},
-{
-    "id": "20",
-    "song": "four",
-    "duration": "2:08",
-    "audio": "/audios/lofi-fofi/02-four.mp3"
-},
-{
-    "id": "21",
-    "song": "summer memories",
-    "duration": "0:51",
-    "audio": "/audios/lofi-fofi/03-summer-memories.mp3"
-},
-{
-    "id": "22",
-    "song": "fofi",
-    "duration": "3:03",
-    "audio": "/audios/lofi-fofi/04-fofi.mp3"
-}
-],
-"playlists": [
-{
-    "name": "teste8989",
-    "type": "Estudar",
-    "musics": [
-    "3",
-    "6"
-    ],
-    "id": 2
-}
-]
+  ]
 }
