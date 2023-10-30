@@ -1,41 +1,34 @@
 'use client';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 // import Image from 'next/image';
+import PlaylistGenerator from './utils';
 import styles from './page.module.css';
+import axios from 'axios';
 
 export default function Detail(props) {
     const idSelecionado = props.params.id;
     const [playlist, setPlaylist] = useState({ musics: [] });
-    const [musics, setMusics] = useState([]);
-    const [matchingMusics, setMatchingMusics] = useState([]);
+    // const [musics, setMusics] = useState([]);
 
-    
+
     // useEffect(() => {
     //     axios.get('http://localhost:3004/musics').then(
-    //         (response) => setMusics(response.data)
+    //         (response) => {
+    //             setMusics(response.data)
+    //         }
     //         )
     //     }, [])
-        
-    // useEffect(() => {
-    //     axios.get(`http://localhost:3004/playlists/${idSelecionado}`).then(
-    //         (response) => {
-    //             setPlaylist(response.data);
-    //             const matching = findMatchingMusics(response.data.musics, musics);
-    //             setMatchingMusics(matching);
-    //         }
-    //     )
-    // }, [])
 
-    // function findMatchingMusics(playlistMusicId, allMusics) {
-    //     const matchingMusics = [];
+    useEffect(() => {
+        axios.get(`http://localhost:3004/playlists/${idSelecionado}`).then(
+            (response) => {
+                setPlaylist(response.data);
+            }
+        )
+    }, [])
 
-    //     playlistMusicId.forEach(playlistMusicId => {
-    //         const musicWithMatchingId = allMusics.find((music) => music.id === playlistMusicId);
-    //         if (musicWithMatchingId) {
-    //             matchingMusics.push(musicWithMatchingId);
-    //         }
-    //     })
-    // }
+    const test = PlaylistGenerator(props);
+    console.log(test);
 
     return (
         <>
@@ -50,8 +43,8 @@ export default function Detail(props) {
                             height={350}
                             layout="responsive"
                         /> */}
-                        <h2 style={{marginTop: "1rem"}}>{playlist.name}</h2>
-                        <p style={{opacity: "0.5", fontWeight: "lighter", fontSize: "small"}}>{playlist.type}</p>
+                        <h2 style={{ marginTop: "1rem" }}>{playlist.name}</h2>
+                        <p style={{ opacity: "0.5", fontWeight: "lighter", fontSize: "small" }}>{playlist.type}</p>
                     </div>
                     <div className="col-md-8">
                         <table className={`table ${styles["table-content"]}`}>
@@ -64,10 +57,10 @@ export default function Detail(props) {
                                 </tr>
                             </thead>
                             <tbody className="table-group-divider">
-                                {matchingMusics.map((music) => {
+                                {test.map((music, index) => {
                                     return (
                                         <tr>
-                                            <th scope="row">{music.id}</th>
+                                            <th scope="row">{index + 1}</th>
                                             <td>{music.song}</td>
                                             <td>{music.duration}</td>
                                             <td>
