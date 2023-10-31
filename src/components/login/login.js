@@ -42,6 +42,11 @@
     
     }
 
+    function handleLogout() {
+      localStorage.removeItem('usuarioLogado');
+      window.location.replace("http://localhost:3000");
+    }
+
     return (
       <Container className={`mt-3 d-flex justify-content-center align-items-center ${styles["form-content"]}`}>
         <div>
@@ -85,6 +90,10 @@
               Entrar
             </Button>
               <br></br>
+              <br></br>
+              <Button onClick={handleLogout} variant="primary">
+                Logout
+              </Button>
               <br></br>
             <a href="http://localhost:3000/users/signup">Não tem uma conta? Cadastre-se aqui</a>
 
