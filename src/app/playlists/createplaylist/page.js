@@ -55,29 +55,26 @@ export default function CreatePlaylist() {
         }
     }
 
-    const test = PlaylistGenerator(playlist);
+    function removeSongFromPlaylist(song) {
+        setPlaylist(prevPlaylist => prevPlaylist.filter(item => item.toString() !== song.id));
+    }
 
-    console.log(playlist);
-    console.log(selectedSong);
-    console.log(test);
+    const test = PlaylistGenerator(playlist);
 
     return (
         <div className={styles.main}>
             <div className="container-fluid" id={styles.container}>
-
                 <form onSubmit={handleSubmit}>
-                    <h1>Criar Playlist</h1>
-
+                    <h1 style={{marginBottom: "2rem"}}>Criar Playlist</h1>
                     <div className="row">
                         <div className="col-md">
-                            <label htmlFor="playlistName">Nome</label>
+                            <label htmlFor="playlistName" style={{ marginBottom: "1rem" }}>Nome</label>
                             <input type="text" value={playlistName} onChange={(e) => setPlaylistName(e.target.value)} className="form-control" placeholder="Digite o nome da Playlist" />
                         </div>
-
                         <div className="col-md">
-                            <label htmlFor="playlistType">Tipo</label>
+                            <label htmlFor="playlistType" style={{ marginBottom: "1rem" }}>Tipo</label>
                             <select value={playlistType} onChange={(e) => setPlaylistType(e.target.value)} className="form-control">
-                                <option value="">--------</option>
+                                <option value="" disabled hidden>Selecione o tipo</option>
                                 <option value="Relaxar">Relaxar</option>
                                 <option value="Estudar">Estudar</option>
                                 <option value="Trabalhar">Trabalhar</option>
@@ -92,16 +89,57 @@ export default function CreatePlaylist() {
                             <SongDropdown songs={songs} selectedSong={selectedSong} setSelectedSong={setSelectedSong} />
                         </div>
                         <div className="col-sm">
-                            <button className="btn btn-secondary" type="button" onClick={addSongToPlaylist}>+</button>
+                            <button
+                                className="btn btn-secondary"
+                                type="button"
+                                onClick={addSongToPlaylist}
+                                style={{ background: "none" }}>
+                                +
+                            </button>
                         </div>
                     </div>
                     <br />
                     <div className="row">
                         <h4>Músicas Selecionadas:</h4>
-                        <div className="col-md" id={styles.list}>
+
+                        <div className="col-md">
+                            <table className={`table ${styles["table-content"]}`}>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Song</th>
+                                        <th scope="col">Duration</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody className="table-group-divider">
+                                    {test.map((song, index) => {
+                                        return (
+                                            <tr>
+                                                <th scope="row">{index + 1}</th>
+                                                <td>{song.song}</td>
+                                                <td>{song.duration}</td>
+                                                <td>
+                                                    <button
+                                                        className="btn btn-secondary"
+                                                        type="button"
+                                                        style={{ float: "right", background: "none" }}
+                                                        onClick={() => removeSongFromPlaylist(song)}
+                                                    >
+                                                        Remover
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        )
+                                    })}
+                                </tbody>
+                            </table>
+                        </div>
+
+                        {/* <div className="col-md" id={styles.list}>
                             <div>
                                 <ul>
-                                    {test.map((track, index) => {
+                                    {test.map((track) => {
                                         return (
                                             <li>
                                                 {track.song}
@@ -110,9 +148,10 @@ export default function CreatePlaylist() {
                                     })}
                                 </ul>
                             </div>
-                        </div>
-                    </div>
+                        </div> */}
 
+
+                    </div>
                     <button type="submit" className="btn btn-secondary">Criar</button>
                 </form>
                 <br />
