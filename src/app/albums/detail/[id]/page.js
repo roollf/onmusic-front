@@ -13,7 +13,7 @@ export default function Detail(props) {
             (response) => setAlbum(response.data)
         )
     }, [])
-    
+
     return (
         <>
             <main className={styles.main}>
