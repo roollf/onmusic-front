@@ -42,9 +42,9 @@ export default function SearchResult() {
                 </tr>
               </thead>
               <tbody className="table-group-divider">
-                {result.map(({ id, song, duration, audio }) => ( //map gerando os resultados automaticamente através da , sem a necessidade de colocar result.id}
+                {result.map(({ id, song, duration, audio }, index) => ( //map gerando os resultados automaticamente através da , sem a necessidade de colocar result.id}
                   <tr>
-                    <th scope="row">{id}</th>
+                    <th scope="row">{index + 1}</th>
                     <td>{song}</td>
                     <td>{duration}</td>
                     <td>
