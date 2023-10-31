@@ -14,8 +14,8 @@ const Search = () => {
 
   return (
     <div>
-      <input type="text" placeholder="Name of the song" onChange={handleChange} />
-      <button onClick={handleSearch}>Search</button>
+      <input type="text" placeholder="Name of the song" style={{ marginRight: "1rem", border: "var(--border-radius)" }} onChange={handleChange} />
+      <button onClick={handleSearch} style={{ marginRight: "1rem", border: "var(--border-radius)" }}>Search</button>
     </div>
   );
 };
