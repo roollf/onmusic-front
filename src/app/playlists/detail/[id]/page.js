@@ -1,38 +1,50 @@
 'use client';
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
+import PlaylistGenerator from './utils';
 import styles from './page.module.css';
 import axios from 'axios';
 
 export default function Detail(props) {
     const idSelecionado = props.params.id;
-    const [album, setAlbum] = useState({ musics: [], genre: [] });
+    const [playlist, setPlaylist] = useState({ musics: [] });
+    // const [musics, setMusics] = useState([]);
+
+
+    // useEffect(() => {
+    //     axios.get('http://localhost:3004/musics').then(
+    //         (response) => {
+    //             setMusics(response.data)
+    //         }
+    //         )
+    //     }, [])
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/albums/${idSelecionado}`).then(
-            (response) => setAlbum(response.data)
+        axios.get(`http://localhost:3004/playlists/${idSelecionado}`).then(
+            (response) => {
+                setPlaylist(response.data);
+            }
         )
     }, [])
+
+    const test = PlaylistGenerator(props);
+    console.log(test);
 
     return (
         <>
             <main className={styles.main}>
                 <div className="row">
                     <div className="col-md-4">
-                        <Image
+                        {/* <Image
                             className={`${styles["table-content-image"]}`}
                             src={album.image}
                             alt={`Imagem ${album.name}`}
                             width={350}
                             height={350}
                             layout="responsive"
-                        />
-                        <h2 style={{marginTop: "1rem"}}>{album.name}</h2>
-                        {album.genre.map((genre) => {
-                            return (
-                                <p style={{opacity: "0.5", fontWeight: "lighter", fontSize: "small"}}>{genre}</p>
-                            )
-                        })}
+                        /> */}
+                        <h2 style={{ marginTop: "1rem" }}>{playlist.name}</h2>
+                        <p style={{ opacity: "0.5", fontWeight: "lighter", fontSize: "small" }}>{playlist.type}</p>
                     </div>
                     <div className="col-md-8">
                         <table className={`table ${styles["table-content"]}`}>
@@ -45,10 +57,10 @@ export default function Detail(props) {
                                 </tr>
                             </thead>
                             <tbody className="table-group-divider">
-                                {album.musics.map((music) => {
+                                {test.map((music, index) => {
                                     return (
                                         <tr>
-                                            <th scope="row">{music.id}</th>
+                                            <th scope="row">{index + 1}</th>
                                             <td>{music.song}</td>
                                             <td>{music.duration}</td>
                                             <td>
