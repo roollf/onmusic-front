@@ -482,7 +482,7 @@
   ],
   "playlists": [
     {
-      "name": "teste8989",
+      "name": "Teste Playlist Karol",
       "type": "Estudar",
       "musics": [
         "3",
@@ -503,17 +503,18 @@
       "id": 3
     },
     {
-      "name": "",
-      "type": "",
+      "name": "Teste Playlist Rolf",
+      "type": "Positividade",
       "musics": [
-        "13",
+        "1",
+        "5",
         "7",
-        "17",
-        "21",
-        "8",
-        "1"
+        "18",
+        "22",
+        "20",
+        "11"
       ],
-      "id": 4
+      "id": 5
     }
   ]
 }
