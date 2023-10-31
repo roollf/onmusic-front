@@ -5,6 +5,7 @@ import Form from 'react-bootstrap/Form';
 import Alert from 'react-bootstrap/Alert';
 import { Button, Container } from 'react-bootstrap';
 import styles from './signup.module.css';
+import axios from 'axios';
 
 export default function UserSignup() {
   const [email, setEmail] = useState("");
@@ -16,13 +17,7 @@ export default function UserSignup() {
   const [dataNascimento, setDataNascimento] = useState('');
   const [sucesso, setSucesso] = useState(null);
 
-//   const Sucess = () => {
-//     Swal.fire({
-//       icon: "success",
-//       title: "Sucesso!",
-//       text: "Bem vindo ao OnMusic!",
-//     });
-//   };
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -33,8 +28,19 @@ export default function UserSignup() {
 
     // Sucess();
 
-    console.log("Enviando dados para o servidor:", { nome, email, senha, genero, dataNascimento });
+     axios.post('http://localhost:3004/users', {
+      email: email,
+      senha: senha,
+    })
+    .then((res) => {
+      setSucesso('Usuário cadastrado com sucesso!');
+      window.location.replace("http://localhost:3000/users/signin");
 
+    })
+ 
+    
+ 
+    console.log("Enviando dados para o servidor:", { nome, email, senha, genero, dataNascimento });
     setError(null);
     setSucesso(null);
     setEmail("");
