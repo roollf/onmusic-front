@@ -2,7 +2,7 @@ import { Header, Footer } from '@/components';
 
 export function HeaderGenerator() {
     return (
-        <Header brand={"OnMusic"} menuItems={"Albums, Signup, FAQ"} tagLine={"Music is our culture."} />
+        <Header brand={"OnMusic"} menuItems={"Albums, FAQ"} tagLine={"Music is our culture."} />
     )
 }
 
