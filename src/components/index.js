@@ -8,4 +8,5 @@ export { default as AppWrapper } from './hooks/appWrapper';
 export { default as UserSignup } from './signup/signup';
 export { default as SongDropdown } from './song/songDropdown';
 export { default as SongList } from './song/songList';
+export { default as Search } from './search/search';
 export { default as SongGenerator } from './song/songs';

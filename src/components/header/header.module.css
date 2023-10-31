@@ -29,3 +29,7 @@
 .navbar-header-link a:hover {
   color: var(--secondary-color);
 }
+
+.navbar-header-content {
+  gap: 12px;
+}

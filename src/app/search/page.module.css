@@ -1,0 +1,26 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem 4rem 4rem;
+  min-height: 100vh;
+  font-family: var(--font-mono);
+}
+
+.table-content {
+  --bs-table-bg: rgba(var(--card-color-rgb), 0);
+  --bs-table-color: inherit;
+  border-bottom: 1px solid rgba(var(--callout-border-color-rgb), 0.2);
+  vertical-align: middle;
+}
+
+.table-content td {
+  font-weight: lighter;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.table-content-image {
+  border-radius: var(--border-radius);
+}
