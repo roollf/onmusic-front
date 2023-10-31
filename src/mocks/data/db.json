@@ -160,37 +160,37 @@
           "id": "1",
           "song": "Intro",
           "duration": "0:30",
-          "audio": "/audios/uislobae/01-intro.mp3"
+          "audio": "/audios/blood-of-fish/01-intro.mp3"
         },
         {
           "id": "2",
           "song": "Cykady Przedostaja Sie Kominem",
           "duration": "4:57",
-          "audio": "/audios/uislobae/02-cykady-przedostaja-sie-kominem.mp3"
+          "audio": "/audios/blood-of-fish/02-cykady-przedostaja-sie-kominem.mp3"
         },
         {
           "id": "3",
           "song": "Zaklinacz Krawatow",
           "duration": "0:37",
-          "audio": "/audios/uislobae/03-zaklinacz-krawatow.mp3"
+          "audio": "/audios/blood-of-fish/03-zaklinacz-krawatow.mp3"
         },
         {
           "id": "4",
           "song": "Zaklinacz Robakow",
           "duration": "5:15",
-          "audio": "/audios/uislobae/04-zaklinacz-robakow.mp3"
+          "audio": "/audios/blood-of-fish/04-zaklinacz-robakow.mp3"
         },
         {
           "id": "5",
           "song": "Rozbzykanie",
           "duration": "5:38",
-          "audio": "/audios/uislobae/05-rozbzykanie.mp3"
+          "audio": "/audios/blood-of-fish/05-rozbzykanie.mp3"
         },
         {
           "id": "6",
           "song": "Gadka, Co Rabie Drwa",
           "duration": "5:02",
-          "audio": "/audios/uislobae/06-gadka-,-co-rabie-drwa.mp3"
+          "audio": "/audios/blood-of-fish/06-gadka-,-co-rabie-drwa.mp3"
         }
       ]
     },
@@ -279,7 +279,73 @@
       ]
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "oin2ioc",
+      "id": 1
+    },
+    {
+      "email": "",
+      "senha": "",
+      "id": 2
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "teste",
+      "id": 3
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "rrrrrrrrrrr",
+      "id": 4
+    },
+    {
+      "email": "miguelmlfilho@gmail.com",
+      "senha": "teste",
+      "id": 5
+    },
+    {
+      "email": "c@gmail.com",
+      "senha": "hapvida",
+      "id": 6
+    },
+    {
+      "email": "l@gmail.com",
+      "senha": "unifor",
+      "id": 7
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "ij2b",
+      "id": 8
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "jo1dh",
+      "id": 9
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "uyfuy",
+      "id": 10
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "iugiy",
+      "id": 11
+    },
+    {
+      "email": "miguelmlfilho77@gmail.com",
+      "senha": "uod1'gh",
+      "id": 12
+    },
+    {
+      "email": "y@gmail.com",
+      "senha": "1234",
+      "id": 13
+    }
+  ],
   "musics": [
     {
       "id": "1",
