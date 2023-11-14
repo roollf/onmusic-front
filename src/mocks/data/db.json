@@ -344,6 +344,11 @@
       "email": "y@gmail.com",
       "senha": "1234",
       "id": 13
+    },
+    {
+      "email": "rolf@gmail.com",
+      "senha": "123",
+      "id": 14
     }
   ],
   "musics": [
@@ -515,6 +520,16 @@
         "11"
       ],
       "id": 5
+    },
+    {
+      "name": "Playlist 4",
+      "type": "Positividade",
+      "musics": [
+        "4",
+        "8",
+        "19"
+      ],
+      "id": 6
     }
   ]
 }
