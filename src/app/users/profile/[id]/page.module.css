@@ -1,0 +1,24 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem 4rem 4rem;
+    min-height: 100vh;
+    font-family: var(--font-mono);
+}
+
+.content p {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.content input {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.content h1 {
+    margin-bottom: 1rem;
+}
