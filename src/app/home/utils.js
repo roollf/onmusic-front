@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { Card, Carousel } from '@/components';
 
+// Geradores de conteúdo para 'Cards' e 'Carousel'
+
 export function MusicCardGenerator() {
     const [playlists, setPlaylists] = useState([]);
 
