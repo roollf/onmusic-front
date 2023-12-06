@@ -8,7 +8,7 @@ export default function CardBodyContent({ musicObject }) {
             <p className="card-text">
                 {musicObject.artist}
             </p>
-            <Link href={`/albums/detail/${musicObject.id}`} className={`btn ${styles["card-content-button"]}`}>
+            <Link href={`/albums/detail/${musicObject._id}`} className={`btn ${styles["card-content-button"]}`}>
                 Go to songs
             </Link>
         </>
