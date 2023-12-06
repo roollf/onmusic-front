@@ -5,7 +5,7 @@ export default function PlaylistGenerator(playlist) {
     const [musics, setMusics] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3004/musics').then(
+        axios.get('http://localhost:3001/songs').then(
             (musicResponse) => {
                 setMusics(musicResponse.data)
             }
@@ -13,7 +13,7 @@ export default function PlaylistGenerator(playlist) {
     }, [])
 
     const musicArray = playlist.map((musicId) => {
-        const mappedMusic = musics.find((music) => music.id === musicId);
+        const mappedMusic = musics.find((music) => music._id === musicId);
         return mappedMusic;
     })
 

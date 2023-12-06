@@ -7,7 +7,7 @@ export function MusicCardGenerator() {
     const [playlist, setPlaylist] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:3004/playlists').then(
+        axios.get('http://localhost:3001/playlists').then(
             (response) => setPlaylist(response.data)
         )
     }, [])

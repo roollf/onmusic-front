@@ -1,7 +1,7 @@
 'use client';
-import { SongDropdown, SongList } from "@/components";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+// import { SongDropdown } from "@/components";
 import PlaylistGenerator from "./utils";
 import styles from './page.module.css';
 
@@ -9,63 +9,76 @@ export default function CreatePlaylist() {
 
     const [selectedSong, setSelectedSong] = useState('');
     const [playlist, setPlaylist] = useState([]);
+    // const [addedMusics, setAddedMusics] = useState([]);
+    // const [removedMusics, setRemovedMusics] = useState([]);
     const [playlistName, setPlaylistName] = useState('');
     const [playlistType, setPlaylistType] = useState('');
     const [songs, setSongs] = useState([]);
     const [successMessage, setSuccessMessage] = useState('');
 
-
     useEffect(() => {
-        axios.get('http://localhost:3004/musics').then(
+        axios.get('http://localhost:3001/songs').then(
             (response) => {
-                console.log(response.data)
                 setSongs(response.data);
             }
         )
     }, [])
 
     function handleSubmit(e) {
-        e.preventDefault(); // Isso previne que o formulário recarregue a página
+        e.preventDefault();
+
+        // const addMusics = addedMusics.map((song) => song._id);
+        // const removeMusics = removedMusics.map((song) => song._id);
 
         const data = {
             name: playlistName,
             type: playlistType,
-            musics: playlist
+            songs: playlist
         };
 
-        axios.post('http://localhost:3004/playlistS/', data)
-            .then((response) => {
-                console.log('Playlist criada com sucesso:', response.data);
-                // mostrar mensagem de acerto
+        axios.post('http://localhost:3001/playlists/', data)
+            .then(() => {
                 setSuccessMessage('Playlist criada com sucesso!');
-                // limpar playlist após envio
+                setSelectedSong('');
                 setPlaylistName('');
                 setPlaylistType('');
                 setPlaylist([]);
+                // setAddedMusics([]);
+                // setRemovedMusics([]);
             })
             .catch((error) => {
                 console.error('Erro ao criar a playlist:', error);
             });
     }
 
-
     function addSongToPlaylist() {
+        // console.log("Selected Song:", selectedSong);
         if (selectedSong && !playlist.includes(selectedSong)) {
-            setPlaylist(prevPlaylist => [...prevPlaylist, selectedSong]);
+            setPlaylist((prevPlaylist) => [...prevPlaylist, selectedSong]);
+            // if (!addedMusics.includes(selectedSong)) {
+            //     setAddedMusics((prevAddedSongs) => [...prevAddedSongs, selectedSong])
+            // }
         }
     }
 
     function removeSongFromPlaylist(song) {
-        setPlaylist(prevPlaylist => prevPlaylist.filter(item => item.toString() !== song.id));
+        setPlaylist((prevPlaylist) => prevPlaylist.filter((item) => item !== song._id));
+        // if (!removedMusics.includes(song._id)) {
+        //     setRemovedMusics((prevRemovedSongs) => [...prevRemovedSongs, song._id]);
+        // }
     }
 
-    const test = PlaylistGenerator(playlist);
+    const playlistPreview = PlaylistGenerator(playlist);
+    // console.log("playlistPreview:", playlistPreview);
+    // console.log("AddedMusics:", addedMusics);
+    // console.log("RemovedMusics:", removedMusics);
+    // console.log("Playlist:", playlist);
 
     return (
         <div className={styles.main}>
             <div className="container-fluid" id={styles.container}>
                 <form onSubmit={handleSubmit}>
-                    <h1 style={{marginBottom: "2rem"}}>Criar Playlist</h1>
+                    <h1 style={{ marginBottom: "2rem" }}>Criar Playlist</h1>
                     <div className="row">
                         <div className="col-md">
                             <label htmlFor="playlistName" style={{ marginBottom: "1rem" }}>Nome</label>
@@ -86,14 +99,22 @@ export default function CreatePlaylist() {
                     <br />
                     <div className="row">
                         <div className="col-md">
-                            <SongDropdown songs={songs} selectedSong={selectedSong} setSelectedSong={setSelectedSong} />
+                            <select className="form-control" value={selectedSong} onChange={(e) => setSelectedSong(e.target.value)}>
+                                <option value="" disabled hidden>Selecionar Música</option>
+                                {songs.map(({ _id, song, duration }) => (
+                                    <option key={_id} value={_id}>
+                                        {song} {duration}
+                                    </option>
+                                ))}
+                            </select>
                         </div>
                         <div className="col-sm">
                             <button
                                 className="btn btn-secondary"
                                 type="button"
                                 onClick={addSongToPlaylist}
-                                style={{ background: "none" }}>
+                                style={{ background: "none" }}
+                            >
                                 +
                             </button>
                         </div>
@@ -101,7 +122,6 @@ export default function CreatePlaylist() {
                     <br />
                     <div className="row">
                         <h4>Músicas Selecionadas:</h4>
-
                         <div className="col-md">
                             <table className={`table ${styles["table-content"]}`}>
                                 <thead>
@@ -113,12 +133,12 @@ export default function CreatePlaylist() {
                                     </tr>
                                 </thead>
                                 <tbody className="table-group-divider">
-                                    {test.map((song, index) => {
+                                    {playlistPreview.map((song, index) => {
                                         return (
                                             <tr>
                                                 <th scope="row">{index + 1}</th>
-                                                <td>{song.song}</td>
-                                                <td>{song.duration}</td>
+                                                <td>{song?.song}</td>
+                                                <td>{song?.duration}</td>
                                                 <td>
                                                     <button
                                                         className="btn btn-secondary"
@@ -126,7 +146,7 @@ export default function CreatePlaylist() {
                                                         style={{ float: "right", background: "none" }}
                                                         onClick={() => removeSongFromPlaylist(song)}
                                                     >
-                                                        Remover
+                                                        -
                                                     </button>
                                                 </td>
                                             </tr>
@@ -135,22 +155,6 @@ export default function CreatePlaylist() {
                                 </tbody>
                             </table>
                         </div>
-
-                        {/* <div className="col-md" id={styles.list}>
-                            <div>
-                                <ul>
-                                    {test.map((track) => {
-                                        return (
-                                            <li>
-                                                {track.song}
-                                            </li>
-                                        )
-                                    })}
-                                </ul>
-                            </div>
-                        </div> */}
-
-
                     </div>
                     <button type="submit" className="btn btn-secondary">Criar</button>
                 </form>
@@ -160,7 +164,6 @@ export default function CreatePlaylist() {
                         <p className="text-success">{successMessage}</p>
                     </div>
                 </div>
-
             </div>
         </div>
     );
