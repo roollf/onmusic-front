@@ -1,13 +1,13 @@
 'use client';
 import { useState, useEffect } from 'react';
 // import Image from 'next/image';
-import PlaylistGenerator from './utils';
+// import PlaylistGenerator from './utils';
 import styles from './page.module.css';
 import axios from 'axios';
 
 export default function Detail(props) {
     const idSelecionado = props.params.id;
-    const [playlist, setPlaylist] = useState({ musics: [] });
+    const [playlist, setPlaylist] = useState({ songs: [] });
     // const [musics, setMusics] = useState([]);
 
 
@@ -20,15 +20,14 @@ export default function Detail(props) {
     //     }, [])
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/playlists/${idSelecionado}`).then(
+        axios.get(`http://localhost:3001/playlists/detail/${idSelecionado}`).then(
             (response) => {
-                setPlaylist(response.data);
+                setPlaylist(response.data[0]);
             }
         )
     }, [])
 
-    const test = PlaylistGenerator(props);
-    console.log(test);
+    // const test = PlaylistGenerator(props);
 
     return (
         <>
@@ -57,7 +56,7 @@ export default function Detail(props) {
                                 </tr>
                             </thead>
                             <tbody className="table-group-divider">
-                                {test.map((music, index) => {
+                                {playlist.songs.map((music, index) => {
                                     return (
                                         <tr>
                                             <th scope="row">{index + 1}</th>

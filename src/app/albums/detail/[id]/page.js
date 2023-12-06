@@ -9,8 +9,8 @@ export default function Detail(props) {
     const [album, setAlbum] = useState({ musics: [], genre: [] });
 
     useEffect(() => {
-        axios.get(`http://localhost:3004/albums/${idSelecionado}`).then(
-            (response) => setAlbum(response.data)
+        axios.get(`http://localhost:3001/albums/detail/${idSelecionado}`).then(
+            (response) => setAlbum(response.data[0])
         )
     }, [])
 
@@ -48,7 +48,7 @@ export default function Detail(props) {
                                 {album.musics.map((music) => {
                                     return (
                                         <tr>
-                                            <th scope="row">{music.id}</th>
+                                            <th scope="row">{music.track}</th>
                                             <td>{music.song}</td>
                                             <td>{music.duration}</td>
                                             <td>

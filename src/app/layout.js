@@ -3,6 +3,7 @@ import './globals.css';
 import { Inter } from 'next/font/google';
 import { HeaderGenerator, FooterGenerator } from './utils';
 import { AppWrapper } from '@/components'
+import { UserProvider } from '@/components/hooks/userContext';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <HeaderGenerator />
+        <UserProvider>
+          <HeaderGenerator />
           <AppWrapper>
             {children}
           </AppWrapper>
-        <FooterGenerator />
+          <FooterGenerator />
+        </UserProvider>
       </body>
     </html>
   )

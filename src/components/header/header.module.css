@@ -20,13 +20,15 @@
   font-size: small;
 }
 
-.navbar-header a {
+.navbar-header a,
+.navbar-header-button {
   color: var(--foreground-color);
   text-decoration: none;
   transition: color .15s ease-in-out;
 }
 
-.navbar-header-link a:hover {
+.navbar-header-link a:hover,
+.navbar-header-button:hover {
   color: var(--secondary-color);
 }
 

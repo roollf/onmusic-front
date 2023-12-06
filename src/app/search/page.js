@@ -12,7 +12,7 @@ export default function SearchResult() {
 
   useEffect(() => {
     // Use o Axios para buscar a música com base no nome da música
-    axios.get(`http://localhost:3004/musics?song_like=${searchTerm}`)
+    axios.get(`http://localhost:3001/search?term=${encodeURIComponent(searchTerm)}`)
       .then((response) => {
         if (response.data.length > 0) {
           setResult(response.data);
@@ -42,7 +42,7 @@ export default function SearchResult() {
                 </tr>
               </thead>
               <tbody className="table-group-divider">
-                {result.map(({ id, song, duration, audio }, index) => ( //map gerando os resultados automaticamente através da , sem a necessidade de colocar result.id}
+                {result.map(({ song, duration, audio }, index) => ( //map gerando os resultados automaticamente através da , sem a necessidade de colocar result.id}
                   <tr>
                     <th scope="row">{index + 1}</th>
                     <td>{song}</td>
