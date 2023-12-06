@@ -1,54 +1,53 @@
 'use client';
 import React, { useState } from 'react';
 // import Swal from "sweetalert2";
-import Form from 'react-bootstrap/Form';
-import Alert from 'react-bootstrap/Alert';
-import { Button, Container } from 'react-bootstrap';
+import { Form, Alert, Button, Container } from 'react-bootstrap';
 import styles from './signup.module.css';
 import axios from 'axios';
 
 export default function UserSignup() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [nome, setNome] = useState("");
   const [email2, setEmail2] = useState("");
-  const [senha, setSenha] = useState("");
-  const [genero, setGenero] = useState("");
+  const [password, setPassword] = useState("");
+  const [password2, setPassword2] = useState("");
+  const [genre, setGenre] = useState("");
+  const [dataNascimento, setDataNascimento] = useState("");
   const [error, setError] = useState(null);
-  const [dataNascimento, setDataNascimento] = useState('');
   const [sucesso, setSucesso] = useState(null);
-
-
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (email !== email2) {
       setError("Os emails não correspondem.");
       return;
     }
 
-    // Sucess();
+    if (password !== password2) {
+      setError("As senhas não correspondem.");
+      return;
+    }
 
-     axios.post('http://localhost:3004/users', {
+    axios.post('http://localhost:3001/users', {
+      name: name,
       email: email,
-      senha: senha,
-    })
-    .then((res) => {
-      setSucesso('Usuário cadastrado com sucesso!');
-      window.location.replace("http://localhost:3000/users/signin");
+      genre: genre,
+      password: password,
+    }).then(
+      () => {
+        setSucesso('Usuário cadastrado com sucesso!');
+      })
 
-    })
- 
-    
- 
-    console.log("Enviando dados para o servidor:", { nome, email, senha, genero, dataNascimento });
     setError(null);
     setSucesso(null);
     setEmail("");
     setEmail2("");
-    setSenha("");
-    setGenero("");
+    setPassword("");
+    setPassword2("");
+    setGenre("");
     setDataNascimento("")
-    setNome("")
+    setName("")
   }
 
   return (
@@ -56,13 +55,12 @@ export default function UserSignup() {
       <div>
         <Form onSubmit={handleSubmit} className="py-3">
           <h1 className="text-center mb-4">Cadastre-se no OnMusic</h1>
-
-          <Form.Group className="mb-3" controlId="nome">
+          <Form.Group className="mb-3" controlId="name">
             <Form.Label>Nome</Form.Label>
             <Form.Control
               type="Nome"
-              value={nome}
-              onChange={(e) => setNome(e.target.value)}
+              value={name}
+              onChange={(e) => setName(e.target.value)}
               placeholder="Digite seu nome"
               className="form-control-sm"
             />
@@ -76,7 +74,7 @@ export default function UserSignup() {
               placeholder="Digite seu email"
               className="form-control-sm"
             />
-            </Form.Group>
+          </Form.Group>
           <Form.Group className="mb-3" controlId="confirmEmail">
             <Form.Label>Confirme seu Email</Form.Label>
             <Form.Control
@@ -91,9 +89,19 @@ export default function UserSignup() {
             <Form.Label>Senha</Form.Label>
             <Form.Control
               type="password"
-              value={senha}
-              onChange={(e) => setSenha(e.target.value)}
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Digite sua senha"
+              className="form-control-sm"
+            />
+          </Form.Group>
+          <Form.Group className="mb-3" controlId="password">
+            <Form.Label>Confirme sua senha</Form.Label>
+            <Form.Control
+              type="password"
+              value={password2}
+              onChange={(e) => setPassword2(e.target.value)}
+              placeholder="Confirme sua senha"
               className="form-control-sm"
             />
           </Form.Group>
@@ -106,35 +114,35 @@ export default function UserSignup() {
               className="form-control-sm"
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="genero">
+          <Form.Group className="mb-3" controlId="genre">
             <Form.Label>Gênero</Form.Label>
             <div>
               <Form.Check
                 inline
                 type="radio"
                 label="Masculino"
-                name="genero"
+                name="genre"
                 value="Masculino"
-                checked={genero === "Masculino"}
-                onChange={(e) => setGenero(e.target.value)}
+                checked={genre === "Masculino"}
+                onChange={(e) => setGenre(e.target.value)}
               />
               <Form.Check
                 inline
                 type="radio"
                 label="Feminino"
-                name="genero"
+                name="genre"
                 value="Feminino"
-                checked={genero === "Feminino"}
-                onChange={(e) => setGenero(e.target.value)}
+                checked={genre === "Feminino"}
+                onChange={(e) => setGenre(e.target.value)}
               />
               <Form.Check
                 inline
                 type="radio"
                 label="Não-binário"
-                name="genero"
+                name="genre"
                 value="Não-binário"
-                checked={genero === "Não-binário"}
-                onChange={(e) => setGenero(e.target.value)}
+                checked={genre === "Não-binário"}
+                onChange={(e) => setGenre(e.target.value)}
               />
             </div>
           </Form.Group>
